@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Initial commit: AI Resume Analyzer"
+git branch -M main
+git remote add origin https://github.com/<your-username>/resume-analyzer.git
+git push -u origin main
