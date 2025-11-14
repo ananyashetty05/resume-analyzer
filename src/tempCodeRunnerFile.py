@@ -7,17 +7,6 @@ st.set_page_config(page_title="AI Resume Analyzer", page_icon="📄", layout="wi
 st.title("📄 AI-Powered Resume Analyzer")
 st.markdown("Get comprehensive feedback on your resume with AI-powered analysis!")
 
-# Check AI availability
-try:
-    from ai_analyzer import AIResumeAnalyzer
-    analyzer = AIResumeAnalyzer()
-    if analyzer.use_ai:
-        st.success("🤖 Grok AI Analysis: Enabled")
-    else:
-        st.warning("🤖 Grok AI Analysis: Disabled (Add Grok API key to .env file for enhanced analysis)")
-except Exception as e:
-    st.info("🤖 AI Analysis: Using fallback mode")
-
 col1, col2 = st.columns(2)
 
 with col1:
@@ -269,18 +258,5 @@ st.markdown("**💡 Pro Tips:**")
 st.markdown("• Use keywords from the job description naturally in your resume")
 st.markdown("• Quantify achievements with numbers and percentages")
 st.markdown("• Tailor your resume for each specific job application")
-st.markdown("• For AI-powered analysis, add your Grok API key to a .env file")
-
-with st.expander("🔧 Setup AI Analysis (Optional)"):
-    st.markdown("""
-    **To enable AI-powered analysis:**
-    1. Get an API key from [Grok Console](https://console.x.ai/)
-    2. Create a `.env` file in the project root
-    3. Add: `GROK_API_KEY=your-grok-api-key-here`
-    4. Restart the application
-    
-    **Without AI:** The app still provides comprehensive analysis using NLP and machine learning.
-    """)
-
 st.markdown("---")
-st.markdown("Built with ❤️ using Streamlit, NLP & AI")
+st.markdown("Built with ❤️ using Streamlit & AI")
