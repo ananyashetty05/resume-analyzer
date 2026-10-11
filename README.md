@@ -1,4 +1,4 @@
-# Resume Intelligence — Full Stack
+# AI Powered Resume Analyzer Intelligence 
 
 A high-end resume analytics product with a React/Vite frontend and FastAPI backend.
 
