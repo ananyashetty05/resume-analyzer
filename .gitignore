@@ -1,0 +1,6 @@
+.env
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+resume_intelligence.db
